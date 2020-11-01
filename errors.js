@@ -4,7 +4,7 @@ class TouchIDError extends Error {
   constructor(name, details, code) {
     super();
     this.name = name || 'TouchIDError';
-    this.message = details.message || 'Touch ID Error';
+    this.message = details?.message || 'Touch ID Error';
     this.details = details || {};
     this.code = code;
   }
